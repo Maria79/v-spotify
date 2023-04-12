@@ -103,7 +103,7 @@ function Player() {
 				)}
 
 				<ForwardIcon
-					//onClick={() => spotifyApi.skipToPrevious}
+					// onClick={() => spotifyApi.skipToPrevious}
 					className='button'
 				/>
 			</div>

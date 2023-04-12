@@ -3,9 +3,9 @@ import {
 	MagnifyingGlassIcon,
 	BuildingLibraryIcon,
 	RssIcon,
-	HeartIcon,
 	PlusCircleIcon,
 } from '@heroicons/react/24/outline';
+import { HeartIcon } from '@heroicons/react/20/solid';
 import { signOut, useSession } from 'next-auth/react';
 import { useEffect, useState } from 'react';
 import { useRecoilState } from 'recoil';
@@ -30,7 +30,7 @@ function Sidebar() {
 	}, [session, spotifyApi]);
 
 	return (
-		<div className='text-gray-500 p-5 text-xs lg:text-sm border-r border-gray-900 overflow-y-scroll scrollbar-hide h-screen sm:max-w-[12rem] lg:max-w-[15rem] hidden md:block pb-36'>
+		<div className='text-gray-500 p-5 text-sm lg:text-lg border-r border-gray-900 overflow-y-scroll scrollbar-hide h-screen sm:max-w-[12rem] lg:max-w-[15rem] hidden md:block'>
 			<div className='space-y-4'>
 				<button className='flex items-center space-x-2 hover:text-white'>
 					<HomeIcon className='h-5 w-5' />
